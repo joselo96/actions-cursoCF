@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
     jobs: 
-      deploy_CF:
+      deploy-CF:
         runs-on: ubuntu-latest  # Usa un entorno Linux actualizado
         steps:
          - uses: actions/checkout@v3  # Extrae el código del repositorio
