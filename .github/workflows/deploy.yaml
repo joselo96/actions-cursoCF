@@ -1,0 +1,17 @@
+name: "Hola Mundo - Deploy"
+
+on: 
+  push:
+    branches: ["main"]
+
+    jobs: 
+    deploy_CF:
+      runs-on: ubuntu-latest
+      steps:
+        run: echo "Hacemos pull del codigo"
+        run: echo "Correr migraciones"
+        run: echo "Generar Binario"
+        run: echo "Publicar"
+
+    #send_notofication:
+    #test_code:
