@@ -6,12 +6,13 @@ on:
 
     jobs: 
     deploy_CF:
-      runs-on: ubuntu-latest
-      steps:
-        run: echo "Hacemos pull del codigo"
-        run: echo "Correr migraciones"
-        run: echo "Generar Binario"
-        run: echo "Publicar"
+      runs-on: ubuntu-latest  # Usa un entorno Linux actualizado
+    steps:
+       - uses: actions/checkout@v3  # Extrae el código del repositorio
+       - run: echo "Hacemos pull del codigo"
+       - run: echo "Correr migraciones"
+       - run: echo "Generar Binario"
+       - run: echo "Publicar"
 
     #send_notofication:
     #test_code:
