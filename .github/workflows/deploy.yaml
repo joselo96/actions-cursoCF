@@ -31,16 +31,19 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
 
+    env: 
+      cf: prueba de variables
+
     steps: 
       - name: Hola Mundo
-        run: echo "Hola Mundo"
+        run: echo "Hola Mundo - $cf"
 
   second_job:
-    needs: first_job
+    needs: first_job          # meeds para colocar dependencias entre jobs 
     runs-on: ubuntu-latest
 
     steps: 
       - name: Hola Mundo
-        run: echo "Hola Mundo ${{ github.ref }}"
+        run: echo "Hola Mundo ${{ github.ref }}"  #se declara el contexto que contiene infirmacion del proceso
 
 
