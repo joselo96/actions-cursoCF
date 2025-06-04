@@ -8,7 +8,7 @@ jobs:
   deploy-CF:
     runs-on: ubuntu-latest  # Usa un entorno Linux actualizado
     steps:
-     - uses: actions/checkout@v3  # Extrae el código del repositorio
+     - uses: actions/checkout@v3  # Extrae el código del repositorio, para este ejemplo no es necesario
      - run: echo "Hacemos pull del codigo"
      - run: echo "Correr migraciones"
      - run: echo "Generar Binario"
