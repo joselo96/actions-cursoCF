@@ -1,18 +1,37 @@
-name: "Hola Mundo - Deploy"
+#Primer EJercicio clase 1 de github actions 
+#name: "Hola Mundo - Deploy"
 
-on: 
-  push:
-    branches: ["main"]
+#on: 
+#  push:
+#    branches: ["main"]
 
-jobs: 
-  deploy-CF:
-    runs-on: ubuntu-latest  # Usa un entorno Linux actualizado
-    steps:
-     - uses: actions/checkout@v3  # Extrae el código del repositorio, para este ejemplo no es necesario
-     - run: echo "Hacemos pull del codigo"
-     - run: echo "Correr migraciones"
-     - run: echo "Generar Binario"
-     - run: echo "Publicar"
+#jobs: 
+#  deploy-CF:
+#    runs-on: ubuntu-latest  # Usa un entorno Linux actualizado
+#    steps:
+#     - uses: actions/checkout@v3  # Extrae el código del repositorio, para este ejemplo no es necesario 
+#     - run: echo "Hacemos pull del codigo"
+#     - run: echo "Correr migraciones"
+#     - run: echo "Generar Binario"
+#     - run: echo "Publicar"
 
     #send_notofication:
     #test_code:
+
+
+#Primer EJercicio clase 1 de github actions 
+#------------------------------------------------------------------------
+
+
+name: deploy to server
+
+on: push
+
+jobs: 
+  firts_job:
+    runs-on: ununtu-latest
+
+    steps: 
+      - name: Hola Mundo
+        run: echo "Hola Mundo"
+
