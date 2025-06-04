@@ -33,7 +33,7 @@ jobs:
 
     steps: 
       - name: Hola Mundo
-      - run: echo "Hola Mundo"
+        run: echo "Hola Mundo"
 
   second_job:
     needs: first_job
@@ -41,6 +41,6 @@ jobs:
 
     steps: 
       - name: Hola Mundo
-      - run: echo "Hola Mundo segundo"
+        run: echo "Hola Mundo segundo"
 
 
