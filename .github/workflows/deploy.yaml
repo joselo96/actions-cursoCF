@@ -28,10 +28,19 @@ name: deploy to server
 on: push
 
 jobs: 
-  firts_job:
+  first_job:
     runs-on: ununtu-latest
 
     steps: 
       - name: Hola Mundo
         run: echo "Hola Mundo"
+
+  second_job:
+    needs: first_job
+    runs-on: ununtu-latest
+
+    steps: 
+      - name: Hola Mundo
+        run: echo "Hola Mundo segundo"
+
 
